@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>18.ValidationAppUsingFilterServlet</display-name>
+	<welcome-file-list>
+		<welcome-file>Registrationform.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>RegistrationServlet</display-name>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<servlet-class>com.mj.Registrationservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<display-name>RegistrationFilter</display-name>
+		<filter-name>RegistrationFilter</filter-name>
+		<filter-class>com.mj.RegistrationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>RegistrationFilter</filter-name>
+		<url-pattern>/reg</url-pattern>
+	</filter-mapping>
+</web-app>
