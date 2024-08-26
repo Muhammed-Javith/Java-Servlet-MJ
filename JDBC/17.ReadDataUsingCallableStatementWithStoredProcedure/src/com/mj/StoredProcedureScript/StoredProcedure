@@ -1,0 +1,7 @@
+save the following in database so you can use it in this program.
+
+
+CREATE PROCEDURE `getSal`(IN id Int, OUT sal Int)
+BEGIN
+select empsal into sal from employee where empno=id;
+END

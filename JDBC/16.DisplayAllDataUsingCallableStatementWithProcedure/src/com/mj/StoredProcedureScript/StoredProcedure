@@ -1,0 +1,9 @@
+save the following in database so you can use it in this program.
+
+
+CREATE  PROCEDURE `getDetails`()
+BEGIN
+select *from employee;
+
+END
+

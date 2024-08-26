@@ -1,0 +1,12 @@
+save the following in database so you can use it in this program.
+
+
+CREATE  FUNCTION `getAvg`(id1 Int, id2 Int) 
+RETURNS int DETERMINISTIC
+Begin 
+declare sal1 int;
+declare sal2 int;
+select empsal into sal1 from employee where empno=id1;
+select empsal into sal2 from employee where empno=id2;
+return (sal1+sal2)/2;
+end

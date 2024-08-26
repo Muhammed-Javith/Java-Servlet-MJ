@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2 style="color: red;">MJ Software Solutions</h2>
+	<h3 style="color: red;">Student Registration Form</h3>
+
+	<form method="POST" action="reg">
+		<table>
+			<tr>
+				<td>Student Id</td>
+				<td><input type="text" name="sid" /></td>
+			</tr>
+			<tr>
+				<td>Student Name</td>
+				<td><input type="text" name="sname" /></td>
+			</tr>
+			<tr>
+				<td>Student Qualification</td>
+				<td><input type="checkbox" value="BSC" name="squal" />BSC<br>
+					<input type="checkbox" value="MCA" name="squal" />MCA<br> <input
+					type="checkbox" value="PHD" name="squal" />PHD<br></td>
+			</tr>
+			<tr>
+				<td>Student Gender</td>
+				<td><input type="radio" value="Male" name="sgender" />Male<br>
+					<input type="radio" value="Female" name="sgender" />Female<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Student Technologies</td>
+				<td><select size="5" name="stech" multiple="multiple">
+						<option value="C">C</option>
+						<option value="C++">C++</option>
+						<option value="Java">JAVA</option>
+						<option value=".Net">.Net</option>
+						<option value="Oracle">Oracle</option>
+						<option value="Testing Tools">Testing Tools</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Branch</td>
+				<td><select name="branch">
+						<option value="Madurai">Madurai</option>
+						<option value="SriNagar">SriNaga</option>
+						<option value="Manali">Manali</option>
+						<option value="Jammu">Jammu</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Student Address</td>
+				<td><textarea rows="10" cols="50" name="saddr"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Registration" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
